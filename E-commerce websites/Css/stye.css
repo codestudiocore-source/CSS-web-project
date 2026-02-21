@@ -9,7 +9,6 @@ body {
   background: #f1f3f6;
 }
 
-/* Header */
 header {
   background: #131921;
   color: white;
@@ -32,7 +31,6 @@ header a {
   margin-left: 10px;
 }
 
-/* Filters */
 .filters {
   padding: 15px;
   background: white;
@@ -40,7 +38,6 @@ header a {
   gap: 15px;
 }
 
-/* Products */
 .products {
   padding: 20px;
   display: grid;
@@ -72,13 +69,6 @@ button {
   background: #ff9900;
   border: none;
   cursor: pointer;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-  }
 }
 .auth {
   max-width: 350px;
@@ -162,17 +152,15 @@ button {
   margin: 10px 0;
   padding: 10px;
 }
-/* SECOND HERO */
 .hero1 {
   text-align: center;
   padding: 50px;
 }
 
-/* FOOTER */
 footer {
   padding: 50px;
   color: black;
-  /* background: #f1f4f7; */
+  background: #f1f4f7;
   text-align: center
 }
 
@@ -188,7 +176,7 @@ footer {
 
 .footer-items a {
   display: block;
-  color: black
+  color: black;
   font-size: 14px;
   margin-bottom: 10px;
   text-decoration: none;
@@ -201,7 +189,7 @@ footer {
 .button-eng {
   margin-top: 20px;
   border: 1px solid black;
-  border-radius: 4px
+  border-radius: 4px;
   padding: 8px;
   display: inline-block;
 }
@@ -210,9 +198,12 @@ footer {
   margin-top: 20px;
   font-size: 14px;
 }
-
-/* RESPONSIVE */
 @media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+  }
+
   .hero span:nth-child(1),
   .hero span:nth-child(2) {
     font-size: 32px;
@@ -221,7 +212,6 @@ footer {
   .footer {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .hero-button {
     flex-direction: column;
   }
@@ -229,4 +219,6 @@ footer {
   .hero-button input {
     width: 100%;
   }
+
 }
+
